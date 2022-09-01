@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark Create{% endblock %}
+{% block content %}
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Add" class="btn btn-info bnt-sm">
+    </form>
+</body>
+{% endblock %}

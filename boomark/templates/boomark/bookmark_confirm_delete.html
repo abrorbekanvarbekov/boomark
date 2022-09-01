@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark Delete{% endblock %}
+{% block content %}
+<div>
+    <form action="" method="post">
+        {%csrf_token%}
+        <p></p>
+        {{object}}
+        <div class="alret alert-danger">Do you wont to delete Bookmark?</div>
+        <p></p>
+        <input type="submit" value="delete" class="btn btn-info bnt-sm">
+    </form>
+</div>
+{% endblock %}

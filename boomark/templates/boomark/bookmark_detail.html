@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark Detail{% endblock %}
+{% block content %}
+<div>
+    {{object.site_name}}
+    <p></p>
+    <a href="{{object.url}}">{{object.url}}</a>
+    <p></p>
+    <a href="{% url 'list'%}"><input type="submit" value="back" class="btn btn-info bnt-sm"></a>
+</div>
+{% endblock %}
